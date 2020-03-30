@@ -319,18 +319,11 @@ body {
 .backToTop.red a:hover{ /*Link color while hovering*/
   color: #34eb6e;
 }
-
-
-
-@media only screen and (max-width: 600px){
+/* Media query for mobile */
+@media only screen and (min-width: 600px){
 
   .logo > a > img {
     width: 20vw; /* Fixing logo img size */
-  }
-
-  .footerImage > img { /*Formatting the images in the footer*/
-    padding: 5vmin;
-    width: 30vmax;
   }
 
 
@@ -364,7 +357,6 @@ body {
     background-color: #cb2648;
     box-shadow: 1px 10px 45px 0px rgba(255,0,38,0.7);
     z-index: 1;
-    font-size: 6vmin;
   }
 
   .dropdown-content a { /* The dropdown stuff */
@@ -379,25 +371,63 @@ body {
     width: 30vmin;
     height: 19vmin;
   }
+}
 
 
-  .characterContainer { /*Formatting the container and adding a bg color */
+
+
+/* Media query for computer browser */
+@media only screen and (min-width: 992px){
+
+  .logo > a > img {
+    width: 6vw; /* Fixing logo img size */
+  }
+
+
+  .contentContainer {
     display: flex;
-    flex-direction: row;
-    padding: 2vmin;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 70vmax;
+    color: white; /* Font color */
+    padding: 2vw;
+    font-size: 1.5vmax;
+    font-family: 'Jura', sans-serif; /* Choosing a nice font */
+    font-weight: bold;
     background-color: #343c4d;
+    border: 2px solid #cb2648;
   }
 
-  .characterContainer > a { /*image formatting inside the outside*/
-    width: 12.5%;
-    height: 25vh;
+  .abilitiesContainer { /*One container only takes up 50% of the row*/
+    font-family: 'Questrial', sans-serif; /* Choosing a nice font */
+    width: 50%;
+    color: #bfbfbf;
   }
 
-
-  .characterContainer > a > img { /*image formatting inside the container*/
+  .abilitiesContainer > img {  /*Image resizing*/
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cb2648;
+    box-shadow: 1px 10px 45px 0px rgba(255,0,38,0.7);
+    z-index: 1;
+  }
+
+
+  .dropdown-content a { /* The dropdown stuff */
+    color: white;
+    padding: 1vh 2vw;
+    text-decoration: none;
+    display: flex;
+  }
+
+
+
+  .footerImage > img { /*Formatting the images in the footer*/
+    padding: 5vmin;
+    width: 30vmin;
+  }
 }
