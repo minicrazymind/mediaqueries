@@ -321,7 +321,7 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .logo > a > img {
     width: 10vw; /* Fixing logo img size */
   }
