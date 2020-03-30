@@ -320,9 +320,9 @@ body {
   color: #34eb6e;
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
+@media screen and (max-width : 600px) {
   .logo > a > img {
-    width: 10vw; /* Fixing logo img size */
+    width: 20vw; /* Fixing logo img size */
   }
 
   .footerImage > img { /*Formatting the images in the footer*/
@@ -366,5 +366,18 @@ body {
 
   .abilitiesContainer > img {  /*Image resizing*/
     width: 100vw;
+  }
+
+  .dropdown-content a { /* The dropdown stuff */
+    color: white;
+    padding: 1vh 30vw;
+    text-decoration: none;
+    display: flex;
+  }
+
+  .footerImage > img { /*Formatting the images in the footer*/
+    padding: 5vmin;
+    width: 30vmin;
+    height: 19vmin;
   }
 }
