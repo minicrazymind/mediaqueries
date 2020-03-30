@@ -2,13 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   /* border: 1px solid white; */
 }
 
 body {
   background-color: #343c4d;
 }
+
 
 .bgImage {
   position: fixed; /*keeps background from moving while rest of site scrolls*/
@@ -320,7 +320,10 @@ body {
   color: #34eb6e;
 }
 
-@media screen and (max-width : 600px) {
+
+
+@media only screen and (max-width: 600px){
+
   .logo > a > img {
     width: 20vw; /* Fixing logo img size */
   }
@@ -345,19 +348,6 @@ body {
     border: 2px solid #cb2648;
   }
 
-
-  .bgImage.home {
-    background-image: url('data/bg_6.png'); /*Background image*/
-  }
-
-  .bgImage.blue {
-    background-image: url('data/bg_7.png');
-  }
-
-  .bgImage.green {
-    background-image: url('data/bg_8.png'); /*Background image*/
-  }
-
   .abilitiesContainer { /*One container only takes up 50% of the row*/
     font-family: 'Questrial', sans-serif; /* Choosing a nice font */
     width: 100vw;
@@ -365,7 +355,7 @@ body {
   }
 
   .abilitiesContainer > img {  /*Image resizing*/
-    width: 100vw;
+    width: 90vw;
   }
 
   .dropdown-content a { /* The dropdown stuff */
@@ -380,69 +370,25 @@ body {
     width: 30vmin;
     height: 19vmin;
   }
-}
 
 
-
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  .logo > a > img {
-    width: 20vw; /* Fixing logo img size */
-  }
-
-  .footerImage > img { /*Formatting the images in the footer*/
-    padding: 5vmin;
-    width: 30vmax;
-  }
-
-
-  .contentContainer {
+  .characterContainer { /*Formatting the container and adding a bg color */
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    color: white; /* Font color */
-    font-size: 3vmax;
-    font-family: 'Jura', sans-serif; /* Choosing a nice font */
-    font-weight: bold;
+    flex-direction: row;
+    padding: 2vmin;
     background-color: #343c4d;
+  }
 
-    border: 2px solid #cb2648;
+  .characterContainer > a { /*image formatting inside the outside*/
+    width: 12.5%;
+    height: 25vh;
   }
 
 
-  .bgImage.home {
-    background-image: url('data/bg_6.png'); /*Background image*/
+  .characterContainer > a > img { /*image formatting inside the container*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .bgImage.blue {
-    background-image: url('data/bg_7.png');
-  }
-
-  .bgImage.green {
-    background-image: url('data/bg_8.png'); /*Background image*/
-  }
-
-  .abilitiesContainer { /*One container only takes up 50% of the row*/
-    font-family: 'Questrial', sans-serif; /* Choosing a nice font */
-    width: 100vw;
-    color: #bfbfbf;
-  }
-
-  .abilitiesContainer > img {  /*Image resizing*/
-    width: 100vw;
-  }
-
-  .dropdown-content a { /* The dropdown stuff */
-    color: white;
-    padding: 1vh 30vw;
-    text-decoration: none;
-    display: flex;
-  }
-
-  .footerImage > img { /*Formatting the images in the footer*/
-    padding: 5vmin;
-    width: 30vmin;
-    height: 19vmin;
-  }
 }
