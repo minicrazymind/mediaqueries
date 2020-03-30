@@ -358,9 +358,18 @@ body {
     width: 90vw;
   }
 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cb2648;
+    box-shadow: 1px 10px 45px 0px rgba(255,0,38,0.7);
+    z-index: 1;
+    font-size: 6vmin;
+  }
+
   .dropdown-content a { /* The dropdown stuff */
     color: white;
-    padding: 1vh 30vw;
+    padding: 1vh 25vw;
     text-decoration: none;
     display: flex;
   }
