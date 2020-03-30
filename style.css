@@ -320,8 +320,7 @@ body {
   color: #34eb6e;
 }
 
-
-@media screen and (max-width: 800px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
   .logo > a > img {
     width: 10vw; /* Fixing logo img size */
   }
